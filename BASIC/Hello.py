@@ -9,3 +9,18 @@ print('Single quotes statement')
 print ("Same line: ", end="")
 print ("This will print in same line")
 
+
+#However, unlike text, we don't put numbers inside double quotes:
+print(3)
+print(777)
+print(5.25)
+
+
+#You can also do math inside print() function in case of numeric value 
+print (5 + 5)
+print (5 * 5)
+
+
+#You can combine text and numbers in one output by separating them with a comma
+print("My phone number", 9876543210,"is this.")
+
