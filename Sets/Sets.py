@@ -43,14 +43,20 @@ set1 = {"a", "b" , "c"}
 set2 = {1, 2, 3}
 set3 = set1.union(set2)
 print("Union of set1 and set2:",set3)
-#intersection of sets
+#intersection of sets,prints common items in both sets
 set4 = {"a", "b", "c", 1, 2, 3}
 set5 = {"a", "b", 4, 5, 6}
 set6 = set4.intersection(set5)
 print("Intersection of set4 and set5:",set6)
-#symmetric difference of sets
+#symmetric difference of sets,prints diference between two sets,different items in both sets
 set7 = set4.symmetric_difference(set5)
 print("Symmetric difference of set4 and set5:",set7)
 # | operator for union
 set8 = set1 | set2
 print("Union using | operator:",set8)
+
+#frozen set
+#A frozenset is a set that is immutable, meaning that once it is created, you cannot change its items
+frozenset1 = frozenset(["apple", "banana", "cherry"])
+print("Frozen set:",frozenset1)
+print("Type of frozenset1:",type(frozenset1))
