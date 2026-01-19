@@ -1,14 +1,18 @@
 #Dictionary are used to store data values in key:value pairs.
 #A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
-thisdict={"brand":"Ford","model":"Mustang","year":1964}
+thisdict={"brand":"Ford","model":"Focus","year":1964}
 print(thisdict)
 print("Welcome to dictionary module")
 print("Type of thisdict:",type(thisdict))
 print("Length of the dictionary:",len(thisdict))  #Finding the length of the dictionary
 
+#duplicate values will overwrite existing values with the same key, so only the last value will be kept
+thisdict={"brand":"Ford","model":"Focus","year":1964,"model":"Mustang"}
+print("Dictionary after adding duplicate key 'model':",thisdict)
+
 #Accessing items in the dictionary by key
 print("Value of 'brand' key:",thisdict["brand"])
-print("Value of 'model' key using get():",thisdict.get("model"))
+print("Value of 'model' key using get():",thisdict.get("model")) #get() method to access value  
 
 #Changing values in the dictionary
 thisdict["year"]=2020
@@ -19,7 +23,7 @@ thisdict["color"]="red"
 print("Dictionary after adding a new key:value pair:",thisdict)
 
 #Add multiple items to the dictionary using update() method
-thisdict.update({"price":30000,"mileage":15000})
+thisdict.update({"price":5000000,"mileage":15})
 print("Dictionary after updating with multiple key:value pairs:",thisdict)
 
 #Removing items from the dictionary
